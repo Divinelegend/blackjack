@@ -36,5 +36,15 @@ public class CardUnitTest {
         } catch (CardException e){
             assertEquals("Invalid card num: 14", e.getMessage());
         }
+
+        Card c_1 = new Card(3, Suit.HEART);
+        Card c_2 = new Card(3, Suit.HEART);
+        assertEquals(true, c_1.equals(c_2));
+
+        c_2 = new Card(3, Suit.SPADE);
+        assertEquals(false, c_1.equals(c_2));
+
+        c_2 = new Card(4, Suit.HEART);
+        assertEquals(false, c_1.equals(c_2));
     }
 }

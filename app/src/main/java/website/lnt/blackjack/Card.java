@@ -36,6 +36,18 @@ class Card {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (o == this)
+            return true;
+
+        if (!(o instanceof Card))
+            return false;
+
+        Card c = (Card) o;
+        return c.getNum() == mNum && c.getSuit() == mSuit;
+    }
+
+    @Override
     public String toString() {
         String s;
 
