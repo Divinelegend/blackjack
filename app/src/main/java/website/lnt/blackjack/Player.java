@@ -4,15 +4,15 @@ import java.util.LinkedList;
 import java.util.Random;
 
 class Player {
-    private long mID;
+    private final long mID;
     private String mName;
     private LinkedList<Card> mHand;
     private int mDollar;
-    static private final long DEALER_ID = 0xffff;
+    static private final long DEALER_ID = 0xffffL;
 
     private long generateID() {
         Random r = new Random();
-        long max = 0xfffdl;
+        long max = 0xfffdL;
 
         return r.nextLong() % max + 1;
     }
