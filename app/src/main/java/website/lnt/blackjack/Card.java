@@ -10,8 +10,8 @@ enum Suit {
 }
 
 class CardException extends Exception {
-    CardException(String msg, int num) {
-        super(msg + ": " + num);
+    CardException(String msg) {
+        super(msg);
     }
 }
 
@@ -21,7 +21,7 @@ class Card {
 
     Card(int num, Suit suit) throws CardException {
         if (num < 1 || num > 13)
-            throw new CardException("Invalid card num", num);
+            throw new CardException("Invalid card num: " + num);
 
         mNum = num;
         mSuit = suit;
