@@ -13,8 +13,8 @@ class Player {
     private String mName;
     private LinkedList<Hand> mHand;
     private int mDollar;
-    static private final long DEALER_ID = 0xffffL;
-    static private final long MAX_PLAYER_ID = 0xfffdL;
+    private static final long DEALER_ID = 0xffffL;
+    private static final long MAX_PLAYER_ID = 0xfffdL;
 
     private long generateID() {
         Random r = new Random();
