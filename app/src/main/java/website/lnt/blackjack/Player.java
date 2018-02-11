@@ -13,12 +13,12 @@ class Player {
     private LinkedList<Hand> mHand;
     private int mDollar;
     static private final long DEALER_ID = 0xffffL;
+    static private final long MAX_PLAYER_ID = 0xfffdL;
 
     private long generateID() {
         Random r = new Random();
-        long max = 0xfffdL;
 
-        return r.nextLong() % max + 1;
+        return r.nextLong() % MAX_PLAYER_ID + 1;
     }
 
     Player(String name, boolean isDealer, int dollar) {
