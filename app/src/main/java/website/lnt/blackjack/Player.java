@@ -1,6 +1,7 @@
 package website.lnt.blackjack;
 
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Random;
 
 class Hand {
@@ -30,6 +31,18 @@ class Player {
         mName = name;
         mHand = new LinkedList<>();
         mDollar = dollar;
+    }
+
+    String getName() {
+        return mName;
+    }
+
+    long getID() {
+        return mID;
+    }
+
+    List<Hand> getHands() {
+        return mHand;
     }
 
     boolean isDealer() {
