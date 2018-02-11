@@ -3,10 +3,14 @@ package website.lnt.blackjack;
 import java.util.LinkedList;
 import java.util.Random;
 
+class Hand {
+    /* TBD */
+}
+
 class Player {
     private final long mID;
     private String mName;
-    private LinkedList<Card> mHand;
+    private LinkedList<Hand> mHand;
     private int mDollar;
     static private final long DEALER_ID = 0xffffL;
 
