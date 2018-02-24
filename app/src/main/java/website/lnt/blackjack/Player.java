@@ -4,10 +4,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-class Hand {
-    /* TBD */
-}
-
 class Player {
     private final long mID;
     private String mName;
@@ -61,5 +57,6 @@ class Player {
     }
 
     void resetHand() {
+        mHand.clear();
     }
 }
