@@ -6,13 +6,68 @@
     android:layout_height="match_parent"
     tools:context="website.lnt.blackjack.MainActivity">
 
-    <TextView
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Stand"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="539dp" />
 
+    <Button
+        android:id="@+id/bntHit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HIT"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <Button
+        android:id="@+id/bntSplit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Split"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="539dp" />
+
+    <Button
+        android:id="@+id/btnBet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bet $5"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="403dp" />
+
+    <TextView
+        android:id="@+id/txtPlayerHand"
+        android:layout_width="201dp"
+        android:layout_height="124dp"
+        android:text="YourHand"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="326dp" />
+
+    <TextView
+        android:id="@+id/txtDealerHand"
+        android:layout_width="200dp"
+        android:layout_height="128dp"
+        android:text="DealerHand"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="85dp"
+        android:layout_height="28dp"
+        android:text="Result"
+        tools:layout_editor_absoluteX="310dp"
+        tools:layout_editor_absoluteY="170dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        tools:layout_editor_absoluteX="307dp"
+        tools:layout_editor_absoluteY="277dp" />
 </android.support.constraint.ConstraintLayout>
