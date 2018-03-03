@@ -16,6 +16,8 @@ public class Hand {
     LinkedList<Card> Cardinhand = new LinkedList<>();
     private int mBet;
 
+    public int getmBet() {return mBet;}
+
     public void hit(Card card) {
         Cardinhand.add(card);
     }
