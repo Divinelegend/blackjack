@@ -4,70 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="website.lnt.blackjack.MainActivity">
-
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stand"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="539dp" />
+    tools:context="website.lnt.blackjack.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
-        android:id="@+id/bntHit"
+        android:id="@+id/bntBet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HIT"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="539dp" />
+        android:text="Bet $5"
+        tools:layout_editor_absoluteY="402dp" />
+
+    <TextView
+        android:id="@+id/txtPlayerHand"
+        android:layout_width="171dp"
+        android:layout_height="116dp"
+        android:text="YourHand"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <TextView
+        android:id="@+id/txtDealerHand"
+        android:layout_width="175dp"
+        android:layout_height="104dp"
+        android:text="DealerHand"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/txtYourPoint"
+        android:layout_width="84dp"
+        android:layout_height="43dp"
+        android:text="Your Point"
+        tools:layout_editor_absoluteX="297dp"
+        tools:layout_editor_absoluteY="391dp" />
+
+    <Button
+        android:id="@+id/bntStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="START"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="199dp" />
 
     <Button
         android:id="@+id/bntSplit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Split"
-        tools:layout_editor_absoluteX="161dp"
-        tools:layout_editor_absoluteY="539dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <TextView
+        android:id="@+id/txtYourWallet"
+        android:layout_width="74dp"
+        android:layout_height="37dp"
+        android:text="Your Wallet"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="470dp" />
 
     <Button
-        android:id="@+id/btnBet"
+        android:id="@+id/bntHit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bet $5"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="403dp" />
-
-    <TextView
-        android:id="@+id/txtPlayerHand"
-        android:layout_width="201dp"
-        android:layout_height="124dp"
-        android:text="YourHand"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="326dp" />
-
-    <TextView
-        android:id="@+id/txtDealerHand"
-        android:layout_width="200dp"
-        android:layout_height="128dp"
-        android:text="DealerHand"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="170dp" />
-
-    <TextView
-        android:id="@+id/txtResult"
-        android:layout_width="85dp"
-        android:layout_height="28dp"
-        android:text="Result"
-        tools:layout_editor_absoluteX="310dp"
-        tools:layout_editor_absoluteY="170dp" />
+        android:text="Hit"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="303dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/bntInsure"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="START"
-        tools:layout_editor_absoluteX="307dp"
-        tools:layout_editor_absoluteY="277dp" />
+        android:text="Insure"
+        tools:layout_editor_absoluteX="289dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <Button
+        android:id="@+id/bntStay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stay"
+        tools:layout_editor_absoluteX="192dp"
+        tools:layout_editor_absoluteY="303dp" />
+
+    <TextView
+        android:id="@+id/txtPot"
+        android:layout_width="158dp"
+        android:layout_height="52dp"
+        android:text="Pot"
+        tools:layout_editor_absoluteX="118dp"
+        tools:layout_editor_absoluteY="207dp" />
+
+    <TextView
+        android:id="@+id/txtDealerPoint"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:text="Dealer Point"
+        tools:layout_editor_absoluteX="292dp"
+        tools:layout_editor_absoluteY="78dp" />
+
+    <TextView
+        android:id="@+id/txtUserInstruction"
+        android:layout_width="153dp"
+        android:layout_height="1dp"
+        android:text="User instruction"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="547dp" />
 </android.support.constraint.ConstraintLayout>
